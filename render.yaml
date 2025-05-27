@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: instasaveruz77-bot
+    env: python
+    region: oregon
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: true
